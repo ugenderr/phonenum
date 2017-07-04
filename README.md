@@ -1,7 +1,10 @@
 # phonenum
 phone number validation
 
-implement 
-let regStr = "770/123/34564";
+to use this module, 
 
-(/(\d{3}|(\(\d{3}\)))[-. /]?\d{3}[-. /]\d{4}/.test(regStr))
+let phonenum = require('phonenum');
+const ph = new phonenum();
+ph.isValid('123-456-7899');
+
+checkout for test file for more examples
