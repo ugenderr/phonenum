@@ -1,10 +1,10 @@
 {
   "name": "phonenum",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "validates phone numbers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lab -v -t 100 -m 10 -a code -r console -o stdout -r html -o coverage.html -r lcov -o lcov.info -r tap -o test.tap"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/ugenderr/phonenum/issues"
   },
-  "homepage": "https://github.com/ugenderr/phonenum#readme"
+  "homepage": "https://github.com/ugenderr/phonenum#readme",
+  "devDependencies": {
+    "code": "4.1.0",
+    "lab": "14.1.0",
+    "supertest": "3.0.0"
+  }
 }

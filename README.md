@@ -1,10 +1,19 @@
 # phonenum
 phone number validation
 
-to use this module, 
+Lead Maintainer: [Ugender Rekulampally]
+## Usage
 
-let phonenum = require('phonenum');
-const ph = new phonenum();
-ph.isValid('123-456-7899');
+To install locally:
+```bash
+$npm install phonenum --save
+```
+
+in your code,
+the phone number is a string that gets passed to isValid()
+```javascript
+const phonenum = require('phonenum');
+phonenum.isValid('123-456-7899');
+```
 
 checkout for test file for more examples
