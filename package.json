@@ -1,6 +1,6 @@
 {
   "name": "phonenum",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "validates phone numbers",
   "main": "index.js",
   "scripts": {

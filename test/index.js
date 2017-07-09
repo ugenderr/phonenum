@@ -60,3 +60,23 @@ lab.test('fail for (123) 2343456 type case', (done) => {
 				expect (phonenum.isValid('(123) 2343456')).to.equal(false);
 				done();
 });
+lab.test('fail for 023 234 3456 type case', (done) => {
+				expect (phonenum.isValid('023 234 3456')).to.equal(false);
+				done();
+});
+
+lab.test('fail for (023)234 3456 type case', (done) => {
+				expect (phonenum.isValid('(023)234 3456')).to.equal(false);
+				done();
+});
+
+lab.test('fail for (023) 234-3456 type case', (done) => {
+				expect (phonenum.isValid('(023) 234-3456')).to.equal(false);
+				done();
+});
+
+lab.test('fail for (023) 234.3456 type case', (done) => {
+				expect (phonenum.isValid('(023) 234.3456')).to.equal(false);
+				done();
+});
+
